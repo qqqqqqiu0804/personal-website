@@ -19,3 +19,7 @@ features:
   - title: 工具箱
     details: 实用小工具和脚本
 ---
+
+<div class="bg-morandi-cream p-8">
+  <h1 class="text-morandi-purple font-serif">测试 Tailwind CSS</h1>
+</div>
