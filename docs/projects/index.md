@@ -6,12 +6,40 @@ description: 我的 vibecoding 小项目合集
 # 项目展示
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-  <a href="https://github.com/qqqqqqiu0804/htmlppt" target="_blank" class="block bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow no-underline">
-    <h3 class="text-lg font-bold mb-2">htmlppt</h3>
-    <p class="text-gray-600 mb-4">存储芯片涨价逻辑 PPT</p>
-    <div class="flex flex-wrap gap-2">
-      <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-sm">HTML</span>
-      <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-sm">CSS</span>
-    </div>
-  </a>
+  <ProjectCard
+    title="htmlppt"
+    description="存储芯片涨价逻辑 PPT"
+    link="https://github.com/qqqqqqiu0804/htmlppt"
+    :tags="['HTML', 'CSS']"
+  />
+  <ProjectCard
+    title="stock_analysis"
+    description="光伏行业舆情与股价关联分析系统"
+    link="https://github.com/qqqqqqiu0804/stock_analysis"
+    :tags="['Python', '数据分析']"
+  />
+  <ProjectCard
+    title="study-manager"
+    description="期末复习管理系统"
+    link="https://github.com/qqqqqqiu0804/study-manager"
+    :tags="['React', 'TypeScript']"
+  />
+  <ProjectCard
+    title="java-quiz-system"
+    description="Java 测验系统"
+    link="https://github.com/qqqqqqiu0804/java-quiz-system"
+    :tags="['Java', 'HTML']"
+  />
+  <ProjectCard
+    title="kahuang"
+    description="卡黄原设 ABO 系列"
+    link="https://github.com/qqqqqqiu0804/kahuang"
+    :tags="['文学', 'HTML']"
+  />
+  <ProjectCard
+    title="vibecoding"
+    description="vibecoding 小项目合集"
+    link="https://github.com/qqqqqqiu0804/vibecoding"
+    :tags="['HTML', 'CSS', 'JavaScript']"
+  />
 </div>
