@@ -6,9 +6,21 @@ description: 实用小工具和脚本
 # 工具箱
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-  <div class="bg-white rounded-lg shadow-md p-6">
-    <h3 class="text-lg font-bold mb-2">小说爬虫</h3>
-    <p class="text-gray-600 mb-4">爬取小说网站内容</p>
-    <span class="bg-morandi-purple text-white px-4 py-2 rounded">详情开发中</span>
-  </div>
+  <ToolCard
+    title="小说爬虫"
+    description="爬取小说网站内容"
+    link="https://github.com/qqqqqqiu0804/tampermonkey-scripts"
+    :tags="['Tampermonkey', 'JavaScript']"
+  />
+  <ToolCard
+    title="微博备份工具"
+    description="备份自己的原创微博数据"
+    link="https://github.com/qqqqqqiu0804/tampermonkey-scripts"
+    :tags="['Tampermonkey', 'JavaScript']"
+  />
+  <ToolCard
+    title="网页结构分析工具"
+    description="分析网页结构，帮助配置爬虫选择器"
+    :tags="['Tampermonkey', 'JavaScript']"
+  />
 </div>
