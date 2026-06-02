@@ -9,8 +9,6 @@ description: 实用小工具和脚本
   <div class="bg-white rounded-lg shadow-md p-6">
     <h3 class="text-lg font-bold mb-2">小说爬虫</h3>
     <p class="text-gray-600 mb-4">爬取小说网站内容</p>
-    <button class="bg-morandi-purple text-white px-4 py-2 rounded hover:bg-morandi-dark transition-colors">
-      查看详情
-    </button>
+    <span class="bg-morandi-purple text-white px-4 py-2 rounded">详情开发中</span>
   </div>
 </div>
