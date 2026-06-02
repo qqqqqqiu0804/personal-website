@@ -19,3 +19,14 @@ features:
   - title: 工具箱
     details: 实用小工具和脚本
 ---
+
+<ParticleBackground>
+  <div class="text-center py-20">
+    <h1 class="text-4xl font-serif text-morandi-purple mb-4 animate-fade-in">
+      欢迎来到我的个人网站
+    </h1>
+    <p class="text-lg text-morandi-gray animate-fade-in delay-200">
+      用代码创造有趣的东西
+    </p>
+  </div>
+</ParticleBackground>
