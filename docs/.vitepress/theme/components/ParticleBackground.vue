@@ -14,12 +14,13 @@ import { ref, onMounted, onUnmounted } from 'vue'
 const canvasRef = ref(null)
 let animationId = null
 let particles = []
+let logicalWidth = 0
+let logicalHeight = 0
 
 class Particle {
-  constructor(canvas) {
-    this.canvas = canvas
-    this.x = Math.random() * canvas.width
-    this.y = Math.random() * canvas.height
+  constructor() {
+    this.x = Math.random() * logicalWidth
+    this.y = Math.random() * logicalHeight
     this.size = Math.random() * 3 + 1
     this.speedX = Math.random() * 0.5 - 0.25
     this.speedY = Math.random() * 0.5 - 0.25
@@ -30,10 +31,10 @@ class Particle {
     this.x += this.speedX
     this.y += this.speedY
 
-    if (this.x > this.canvas.width) this.x = 0
-    if (this.x < 0) this.x = this.canvas.width
-    if (this.y > this.canvas.height) this.y = 0
-    if (this.y < 0) this.y = this.canvas.height
+    if (this.x > logicalWidth) this.x = 0
+    if (this.x < 0) this.x = logicalWidth
+    if (this.y > logicalHeight) this.y = 0
+    if (this.y < 0) this.y = logicalHeight
   }
 
   draw(ctx) {
@@ -44,16 +45,16 @@ class Particle {
   }
 }
 
-function initParticles(canvas) {
-  const particleCount = Math.floor((canvas.width * canvas.height) / 10000)
+function initParticles() {
+  const particleCount = Math.min(Math.floor((logicalWidth * logicalHeight) / 10000), 200)
   particles = []
   for (let i = 0; i < particleCount; i++) {
-    particles.push(new Particle(canvas))
+    particles.push(new Particle())
   }
 }
 
 function animate(ctx, canvas) {
-  ctx.clearRect(0, 0, canvas.width, canvas.height)
+  ctx.clearRect(0, 0, logicalWidth, logicalHeight)
 
   particles.forEach(particle => {
     particle.update()
@@ -81,20 +82,30 @@ function animate(ctx, canvas) {
   animationId = requestAnimationFrame(() => animate(ctx, canvas))
 }
 
+function setupCanvas(canvas) {
+  const dpr = window.devicePixelRatio || 1
+  logicalWidth = window.innerWidth
+  logicalHeight = window.innerHeight
+  canvas.width = logicalWidth * dpr
+  canvas.height = logicalHeight * dpr
+  canvas.style.width = logicalWidth + 'px'
+  canvas.style.height = logicalHeight + 'px'
+  const ctx = canvas.getContext('2d')
+  ctx.scale(dpr, dpr)
+  return ctx
+}
+
 function handleResize() {
   if (canvasRef.value) {
-    canvasRef.value.width = window.innerWidth
-    canvasRef.value.height = window.innerHeight
-    initParticles(canvasRef.value)
+    setupCanvas(canvasRef.value)
+    initParticles()
   }
 }
 
 onMounted(() => {
   if (canvasRef.value) {
-    canvasRef.value.width = window.innerWidth
-    canvasRef.value.height = window.innerHeight
-    initParticles(canvasRef.value)
-    const ctx = canvasRef.value.getContext('2d')
+    const ctx = setupCanvas(canvasRef.value)
+    initParticles()
     animate(ctx, canvasRef.value)
   }
   window.addEventListener('resize', handleResize)
