@@ -3,6 +3,7 @@
   <a
     :href="link"
     target="_blank"
+    rel="noopener noreferrer"
     class="project-card block bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 no-underline"
   >
     <div class="card-header mb-4">
