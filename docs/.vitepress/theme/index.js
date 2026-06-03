@@ -8,6 +8,7 @@ import BlogCard from './components/BlogCard.vue'
 import ToolCard from './components/ToolCard.vue'
 import TagCloud from './components/TagCloud.vue'
 import Giscus from './components/Giscus.vue'
+import Umami from './components/Umami.vue'
 
 // ScrollTrigger: IntersectionObserver for .scroll-trigger elements
 function initScrollTrigger() {
@@ -74,5 +75,6 @@ export default {
     app.component('ToolCard', ToolCard)
     app.component('TagCloud', TagCloud)
     app.component('Giscus', Giscus)
+    app.component('Umami', Umami)
   }
 }
