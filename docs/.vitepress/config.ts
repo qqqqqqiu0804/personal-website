@@ -19,6 +19,7 @@ export default defineConfig({
           text: '项目展示',
           items: [
             { text: '全部项目', link: '/projects/' },
+            { text: '光伏行业分析系统', link: '/projects/stock-analysis' },
           ]
         }
       ],
@@ -27,6 +28,7 @@ export default defineConfig({
           text: '博客',
           items: [
             { text: '全部文章', link: '/blog/' },
+            { text: 'Python 技巧', link: '/blog/python-tips' },
           ]
         }
       ],
