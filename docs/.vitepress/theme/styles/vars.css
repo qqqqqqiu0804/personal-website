@@ -4,8 +4,6 @@
   --vp-c-brand: #A78BFA;
   --vp-c-brand-light: #C4B5FD;
   --vp-c-brand-dark: #7C3AED;
-
-  /* VitePress 1.x 品牌色变体 */
   --vp-c-brand-1: #A78BFA;
   --vp-c-brand-2: #C4B5FD;
   --vp-c-brand-3: #7C3AED;
@@ -14,12 +12,52 @@
   /* 背景色 */
   --vp-c-bg: #F5F3FF;
   --vp-c-bg-alt: #EDE9FE;
+  --vp-c-bg-elv: #ffffff;
+  --vp-c-bg-soft: #f9f7ff;
 
   /* 文字色 */
   --vp-c-text: #4B5563;
   --vp-c-text-light: #6B7280;
+  --vp-c-text-lighter: #9CA3AF;
+  --vp-c-text-mute: #D1D5DB;
+
+  /* 边框色 */
+  --vp-c-border: rgba(167, 139, 250, 0.2);
+  --vp-c-divider: rgba(167, 139, 250, 0.1);
+  --vp-c-gutter: rgba(167, 139, 250, 0.05);
 
   /* 字体 */
-  --vp-font-family-base: 'Source Han Sans SC', sans-serif;
-  --vp-font-family-mono: 'JetBrains Mono', monospace;
+  --vp-font-family-base: 'Source Han Sans SC', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+  --vp-font-family-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* 圆角 */
+  --vp-border-radius: 8px;
+  --vp-border-radius-lg: 12px;
+
+  /* 阴影 */
+  --vp-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --vp-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  /* 过渡 */
+  --vp-transition: all 0.3s ease;
+}
+
+/* 暗色主题 */
+.dark {
+  --vp-c-bg: #1a1625;
+  --vp-c-bg-alt: #2d2640;
+  --vp-c-bg-elv: #252033;
+  --vp-c-bg-soft: #2d2640;
+
+  --vp-c-text: #E5E7EB;
+  --vp-c-text-light: #D1D5DB;
+  --vp-c-text-lighter: #9CA3AF;
+  --vp-c-text-mute: #6B7280;
+
+  --vp-c-border: rgba(167, 139, 250, 0.3);
+  --vp-c-divider: rgba(167, 139, 250, 0.15);
+  --vp-c-gutter: rgba(167, 139, 250, 0.08);
+
+  --vp-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+  --vp-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
 }
