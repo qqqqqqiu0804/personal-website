@@ -21,10 +21,10 @@ class Particle {
   constructor() {
     this.x = Math.random() * logicalWidth
     this.y = Math.random() * logicalHeight
-    this.size = Math.random() * 3 + 1
+    this.size = Math.random() * 5 + 2
     this.speedX = Math.random() * 0.5 - 0.25
     this.speedY = Math.random() * 0.5 - 0.25
-    this.opacity = Math.random() * 0.5 + 0.2
+    this.opacity = Math.random() * 0.3 + 0.3
   }
 
   update() {
@@ -46,7 +46,7 @@ class Particle {
 }
 
 function initParticles() {
-  const particleCount = Math.min(Math.floor((logicalWidth * logicalHeight) / 10000), 200)
+  const particleCount = Math.min(Math.floor((logicalWidth * logicalHeight) / 5000), 200)
   particles = []
   for (let i = 0; i < particleCount; i++) {
     particles.push(new Particle())
