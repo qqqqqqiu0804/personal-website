@@ -2,7 +2,7 @@
 layout: home
 hero:
   name: "HXT"
-  text: "数据科学教授 & Python 专家"
+  text: "数据科学探索者 & vibecoding 爱好者"
   tagline: "用代码创造有趣的东西"
   actions:
     - theme: brand

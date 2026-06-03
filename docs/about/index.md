@@ -1,6 +1,6 @@
 ---
 title: 关于我
-description: 数据科学教授 & Python 专家
+description: 数据科学探索者 & vibecoding 爱好者
 ---
 
 # 关于我
@@ -11,12 +11,11 @@ description: 数据科学教授 & Python 专家
       <div class="flex-1">
         <h2 class="text-2xl font-serif mb-4">HXT</h2>
         <p class="text-gray-600 mb-4">
-          数据科学与大数据技术教授，Python 编程专家。
-          擅长将复杂概念用简单易懂的方式讲解。
+          数据科学探索者，vibecoding 爱好者，黄婷婷单推。
         </p>
         <p class="text-gray-600 mb-4">
-          拥有十年数据科学与大数据技术教学经验，
-          精通 Python 及其数据科学生态（NumPy, Pandas, Scikit-learn, TensorFlow, PyTorch 等）。
+          喜欢用代码创造有趣的东西，在数据科学的路上不断探索。
+          享受 vibecoding 的乐趣，把想法变成现实。
         </p>
       </div>
     </div>
@@ -62,8 +61,9 @@ description: 数据科学教授 & Python 专家
   <div class="bg-white rounded-lg shadow-md p-8 mb-6">
     <h2 class="text-2xl font-serif mb-4">兴趣爱好</h2>
     <ul class="list-disc list-inside text-gray-600 space-y-2">
+      <li>黄婷婷单推 🌸</li>
       <li>百合 ABO 小说阅读</li>
-      <li>编程教学</li>
+      <li>vibecoding</li>
       <li>数据分析项目</li>
       <li>开源项目贡献</li>
     </ul>

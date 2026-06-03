@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   base: '/personal-website/',
   title: 'HXT 的个人网站',
-  description: '数据科学教授 & Python 专家',
+  description: '数据科学探索者 & vibecoding 爱好者',
   lang: 'zh-CN',
 
   // 头部配置
