@@ -15,7 +15,7 @@ description: 我的 vibecoding 小项目合集
   <ProjectCard
     title="stock_analysis"
     description="光伏行业舆情与股价关联分析系统"
-    link="https://github.com/qqqqqqiu0804/stock_analysis"
+    link="/projects/stock-analysis"
     :tags="['Python', '数据分析']"
   />
   <ProjectCard
