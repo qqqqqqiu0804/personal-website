@@ -6,6 +6,7 @@ import ParticleBackground from './components/ParticleBackground.vue'
 import ProjectCard from './components/ProjectCard.vue'
 import BlogCard from './components/BlogCard.vue'
 import ToolCard from './components/ToolCard.vue'
+import TagCloud from './components/TagCloud.vue'
 
 export default {
   extends: DefaultTheme,
@@ -14,5 +15,6 @@ export default {
     app.component('ProjectCard', ProjectCard)
     app.component('BlogCard', BlogCard)
     app.component('ToolCard', ToolCard)
+    app.component('TagCloud', TagCloud)
   }
 }
