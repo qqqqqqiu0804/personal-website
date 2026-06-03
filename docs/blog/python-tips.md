@@ -1,6 +1,6 @@
 ---
 title: Python 数据分析入门技巧
-description: 10 个实用的 Pandas 技巧
+description: 3 个实用的 Pandas 技巧
 date: 2026-06-02
 tags: [Python, 数据分析, Pandas]
 ---
@@ -12,7 +12,7 @@ tags: [Python, 数据分析, Pandas]
     <p class="text-gray-500 mb-4">发布于 2026-06-02</p>
 
     <p class="text-gray-600 mb-6">
-      Pandas 是 Python 中最常用的数据分析库之一。本文将介绍 10 个实用的 Pandas 技巧，
+      Pandas 是 Python 中最常用的数据分析库之一。本文将介绍 3 个实用的 Pandas 技巧，
       帮助你更高效地进行数据分析。
     </p>
 
