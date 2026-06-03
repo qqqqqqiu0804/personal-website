@@ -1,8 +1,10 @@
 <!-- docs/.vitepress/theme/components/BlogCard.vue -->
 <template>
-  <a
-    :href="link"
-    class="blog-card block bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 no-underline"
+  <component
+    :is="hasLink ? 'a' : 'div'"
+    :href="hasLink ? link : undefined"
+    class="blog-card block bg-white rounded-lg shadow-md p-6 transition-all duration-300 no-underline"
+    :class="{ 'hover:shadow-lg hover:-translate-y-1 cursor-pointer': hasLink }"
   >
     <div class="card-header mb-4">
       <span class="text-xs text-gray-500">{{ date }}</span>
@@ -18,11 +20,13 @@
         {{ tag }}
       </span>
     </div>
-  </a>
+  </component>
 </template>
 
 <script setup>
-defineProps({
+import { computed } from 'vue'
+
+const props = defineProps({
   title: {
     type: String,
     required: true
@@ -37,13 +41,15 @@ defineProps({
   },
   link: {
     type: String,
-    default: '#'
+    default: ''
   },
   tags: {
     type: Array,
     default: () => []
   }
 })
+
+const hasLink = computed(() => props.link && props.link !== '#')
 </script>
 
 <style scoped>
