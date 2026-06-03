@@ -1,12 +1,13 @@
 <!-- docs/.vitepress/theme/components/Giscus.vue -->
 <template>
   <div class="giscus-container mt-8">
-    <div class="giscus"></div>
+    <div ref="giscusRef" class="giscus"></div>
   </div>
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+import { ref, onMounted, onUnmounted, watch } from 'vue'
+import { useData } from 'vitepress'
 
 const props = defineProps({
   repo: {
@@ -59,7 +60,15 @@ const props = defineProps({
   }
 })
 
-onMounted(() => {
+const giscusRef = ref(null)
+const { page } = useData()
+
+function createGiscusScript() {
+  // Remove previous Giscus iframe if any
+  const container = giscusRef.value
+  if (!container) return
+  container.innerHTML = ''
+
   const script = document.createElement('script')
   script.src = 'https://giscus.app/client.js'
   script.setAttribute('data-repo', props.repo)
@@ -77,9 +86,26 @@ onMounted(() => {
   script.crossOrigin = 'anonymous'
   script.async = true
 
-  const container = document.querySelector('.giscus')
+  container.appendChild(script)
+}
+
+onMounted(() => {
+  createGiscusScript()
+})
+
+// Re-initialize Giscus when VitePress route changes (SPA navigation)
+watch(
+  () => page.value.relativePath,
+  () => {
+    createGiscusScript()
+  }
+)
+
+onUnmounted(() => {
+  // Clean up the Giscus container on unmount to avoid stale iframes
+  const container = giscusRef.value
   if (container) {
-    container.appendChild(script)
+    container.innerHTML = ''
   }
 })
 </script>
