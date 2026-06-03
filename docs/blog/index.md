@@ -17,10 +17,10 @@ description: 分享编程经验与心得
   ]"
 />
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
   <BlogCard
     title="Python 数据分析入门技巧"
-    description="10 个实用的 Pandas 技巧"
+    description="3 个实用的 Pandas 技巧"
     date="2026-06-02"
     link="/blog/python-tips"
     :tags="['Python', '数据分析']"
