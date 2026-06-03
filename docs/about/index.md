@@ -24,7 +24,7 @@ description: 数据科学教授 & Python 专家
 
   <div class="bg-white rounded-lg shadow-md p-8 mb-6">
     <h2 class="text-2xl font-serif mb-4">技能专长</h2>
-    <div class="grid grid-cols-2 gap-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
       <div>
         <h3 class="font-bold text-morandi-gray mb-2">编程语言</h3>
         <div class="flex flex-wrap gap-2">

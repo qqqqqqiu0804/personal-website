@@ -4,7 +4,18 @@ export default defineConfig({
   base: '/personal-website/',
   title: 'HXT 的个人网站',
   description: '数据科学教授 & Python 专家',
+  lang: 'zh-CN',
+
+  // 头部配置
+  head: [
+    ['meta', { name: 'author', content: 'HXT' }],
+    ['meta', { name: 'keywords', content: '数据科学, Python, 个人网站, 博客' }],
+    ['link', { rel: 'icon', href: '/personal-website/favicon.ico' }],
+  ],
+
+  // 主题配置
   themeConfig: {
+    // 导航栏
     nav: [
       { text: '首页', link: '/' },
       { text: '项目', link: '/projects/' },
@@ -13,6 +24,8 @@ export default defineConfig({
       { text: '关于', link: '/about/' },
       { text: '联系', link: '/contact/' },
     ],
+
+    // 侧边栏
     sidebar: {
       '/projects/': [
         {
@@ -33,9 +46,13 @@ export default defineConfig({
         }
       ],
     },
+
+    // 社交链接
     socialLinks: [
       { icon: 'github', link: 'https://github.com/qqqqqqiu0804' }
     ],
+
+    // 搜索配置
     search: {
       provider: 'local',
       options: {
@@ -55,6 +72,23 @@ export default defineConfig({
           }
         }
       }
+    },
+
+    // 页脚配置
+    footer: {
+      message: '基于 VitePress 构建',
+      copyright: 'Copyright © 2026 HXT'
+    },
+
+    // 编辑链接
+    editLink: {
+      pattern: 'https://github.com/qqqqqqiu0804/personal-website/edit/main/docs/:path',
+      text: '在 GitHub 上编辑此页面'
+    },
+
+    // 最后更新时间
+    lastUpdated: {
+      text: '最后更新于',
     },
   },
 })
