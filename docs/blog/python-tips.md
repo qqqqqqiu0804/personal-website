@@ -47,4 +47,20 @@ tags: [Python, 数据分析, Pandas]
       更多高级技巧将在后续文章中介绍。
     </p>
   </div>
+
+  <!-- Giscus 评论区 -->
+  <Giscus
+    repo="qqqqqqiu0804/personal-website"
+    repoId="R_kgDONqMk5A"
+    category="Announcements"
+    categoryId="DIC_kwDONqMk5M4CjJqW"
+    mapping="pathname"
+    strict="0"
+    reactionsEnabled="1"
+    emitMetadata="0"
+    inputPosition="bottom"
+    theme="preferred_color_scheme"
+    lang="zh-CN"
+    loading="lazy"
+  />
 </div>
