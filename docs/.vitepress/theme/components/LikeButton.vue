@@ -3,13 +3,14 @@
   <div class="like-button-container">
     <button
       @click="handleLike"
+      :aria-pressed="liked"
+      aria-label="点赞"
       :class="[
         'like-button',
         'flex items-center gap-2',
         'px-4 py-2 rounded-full',
         'transition-all duration-300',
-        liked ? 'bg-morandi-purple text-white' : 'bg-gray-100 text-gray-600',
-        'hover:bg-morandi-purple hover:text-white'
+        liked ? 'bg-morandi-purple text-white hover:bg-morandi-purple/80' : 'bg-gray-100 text-gray-600 hover:bg-morandi-purple hover:text-white'
       ]"
     >
       <span class="text-lg">{{ liked ? '❤️' : '🤍' }}</span>
@@ -20,6 +21,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import { inBrowser } from 'vitepress'
 
 const props = defineProps({
   postId: {
@@ -31,19 +33,29 @@ const props = defineProps({
 const liked = ref(false)
 const likeCount = ref(0)
 
+function safeGetJSON(key, fallback) {
+  try {
+    return JSON.parse(localStorage.getItem(key)) || fallback
+  } catch {
+    return fallback
+  }
+}
+
 onMounted(() => {
+  if (!inBrowser) return
+
   // 从 localStorage 读取点赞状态
-  const likedPosts = JSON.parse(localStorage.getItem('likedPosts') || '{}')
+  const likedPosts = safeGetJSON('likedPosts', {})
   liked.value = !!likedPosts[props.postId]
 
   // 从 localStorage 读取点赞数量
-  const likeCounts = JSON.parse(localStorage.getItem('likeCounts') || '{}')
+  const likeCounts = safeGetJSON('likeCounts', {})
   likeCount.value = likeCounts[props.postId] || 0
 })
 
 function handleLike() {
-  const likedPosts = JSON.parse(localStorage.getItem('likedPosts') || '{}')
-  const likeCounts = JSON.parse(localStorage.getItem('likeCounts') || '{}')
+  const likedPosts = safeGetJSON('likedPosts', {})
+  const likeCounts = safeGetJSON('likeCounts', {})
 
   if (liked.value) {
     // 取消点赞
@@ -60,8 +72,12 @@ function handleLike() {
   likeCount.value = likeCounts[props.postId] || 0
 
   // 保存到 localStorage
-  localStorage.setItem('likedPosts', JSON.stringify(likedPosts))
-  localStorage.setItem('likeCounts', JSON.stringify(likeCounts))
+  try {
+    localStorage.setItem('likedPosts', JSON.stringify(likedPosts))
+    localStorage.setItem('likeCounts', JSON.stringify(likeCounts))
+  } catch {
+    // 静默失败：存储满或隐私模式下不阻塞用户操作
+  }
 }
 </script>
 
