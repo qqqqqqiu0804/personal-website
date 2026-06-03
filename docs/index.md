@@ -30,3 +30,8 @@ features:
     </p>
   </div>
 </ParticleBackground>
+
+<div class="text-center py-4">
+  <!-- shareId 需要替换为 Umami 后台生成的分享链接 ID -->
+  <Umami shareId="YOUR_SHARE_ID" />
+</div>

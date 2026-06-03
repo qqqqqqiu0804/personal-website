@@ -11,7 +11,7 @@
 import { ref, onMounted } from 'vue'
 
 const props = defineProps({
-  websiteId: {
+  shareId: {
     type: String,
     required: true
   },
@@ -29,7 +29,10 @@ const pageViews = ref(0)
 
 onMounted(async () => {
   try {
-    const response = await fetch(`${props.apiUrl}/websites/${props.websiteId}/stats`)
+    const response = await fetch(`${props.apiUrl}/share/${props.shareId}/stats`)
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}: ${response.statusText}`)
+    }
     const data = await response.json()
     pageViews.value = data.pageviews.value
   } catch (error) {
