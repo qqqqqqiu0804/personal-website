@@ -5,17 +5,83 @@ description: 数据科学教授 & Python 专家
 
 # 关于我
 
-<div class="max-w-2xl mx-auto">
+<div class="max-w-3xl mx-auto">
+  <div class="bg-white rounded-lg shadow-md p-8 mb-6">
+    <div class="flex items-start gap-6">
+      <div class="flex-1">
+        <h2 class="text-2xl font-serif mb-4">HXT</h2>
+        <p class="text-gray-600 mb-4">
+          数据科学与大数据技术教授，Python 编程专家。
+          擅长将复杂概念用简单易懂的方式讲解。
+        </p>
+        <p class="text-gray-600 mb-4">
+          拥有十年数据科学与大数据技术教学经验，
+          精通 Python 及其数据科学生态（NumPy, Pandas, Scikit-learn, TensorFlow, PyTorch 等）。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-lg shadow-md p-8 mb-6">
+    <h2 class="text-2xl font-serif mb-4">技能专长</h2>
+    <div class="grid grid-cols-2 gap-4">
+      <div>
+        <h3 class="font-bold text-morandi-gray mb-2">编程语言</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded">Python</span>
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">JavaScript</span>
+          <span class="bg-green-100 text-green-800 px-3 py-1 rounded">SQL</span>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-bold text-morandi-gray mb-2">数据科学</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded">数据分析</span>
+          <span class="bg-red-100 text-red-800 px-3 py-1 rounded">机器学习</span>
+          <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded">深度学习</span>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-bold text-morandi-gray mb-2">工具框架</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded">Pandas</span>
+          <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded">NumPy</span>
+          <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded">Scikit-learn</span>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-bold text-morandi-gray mb-2">其他技能</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded">数据可视化</span>
+          <span class="bg-lime-100 text-lime-800 px-3 py-1 rounded">大数据处理</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-lg shadow-md p-8 mb-6">
+    <h2 class="text-2xl font-serif mb-4">兴趣爱好</h2>
+    <ul class="list-disc list-inside text-gray-600 space-y-2">
+      <li>百合 ABO 小说阅读</li>
+      <li>编程教学</li>
+      <li>数据分析项目</li>
+      <li>开源项目贡献</li>
+    </ul>
+  </div>
+
   <div class="bg-white rounded-lg shadow-md p-8">
-    <h2 class="text-2xl font-serif mb-4">HXT</h2>
-    <p class="text-gray-600 mb-4">
-      数据科学与大数据技术教授，Python 编程专家。
-      擅长将复杂概念用简单易懂的方式讲解。
-    </p>
-    <div class="flex flex-wrap gap-2">
-      <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded">Python</span>
-      <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">JavaScript</span>
-      <span class="bg-green-100 text-green-800 px-3 py-1 rounded">数据分析</span>
+    <h2 class="text-2xl font-serif mb-4">联系方式</h2>
+    <div class="space-y-3">
+      <div class="flex items-center gap-3">
+        <span class="text-gray-500 w-16">GitHub:</span>
+        <a href="https://github.com/qqqqqqiu0804" target="_blank" rel="noopener noreferrer" class="text-morandi-purple hover:underline">
+          qqqqqqiu0804
+        </a>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="text-gray-500 w-16">邮箱:</span>
+        <span>837530223@qq.com</span>
+      </div>
     </div>
   </div>
 </div>
