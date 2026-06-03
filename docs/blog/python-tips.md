@@ -48,6 +48,9 @@ tags: [Python, 数据分析, Pandas]
     </p>
   </div>
 
+  <!-- 点赞按钮 -->
+  <LikeButton postId="python-tips" />
+
   <!-- Giscus 评论区 -->
   <Giscus
     repo="qqqqqqiu0804/personal-website"
