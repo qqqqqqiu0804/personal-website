@@ -3,6 +3,8 @@ title: 光伏行业舆情与股价关联分析系统
 description: 基于 Python 的毕业设计项目
 ---
 
+[← 返回项目列表](/projects/)
+
 # 光伏行业舆情与股价关联分析系统
 
 <div class="max-w-4xl mx-auto">
