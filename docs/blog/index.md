@@ -15,7 +15,6 @@ description: 分享编程经验与心得
     { name: 'Vue', count: 2 },
     { name: 'React', count: 1 },
   ]"
-  @select="handleTagSelect"
 />
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
