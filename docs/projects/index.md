@@ -12,6 +12,8 @@ description: 我的 vibecoding 小项目合集
       description="存储芯片涨价逻辑 PPT"
       link="https://github.com/qqqqqqiu0804/htmlppt"
       :tags="['HTML', 'CSS']"
+      icon="📊"
+      repo="qqqqqqiu0804/htmlppt"
     />
   </div>
   <div class="animate-fade-in delay-100">
@@ -19,7 +21,9 @@ description: 我的 vibecoding 小项目合集
       title="stock_analysis"
       description="光伏行业舆情与股价关联分析系统"
       link="/projects/stock-analysis"
-      :tags="['Python', '数据分析']"
+      :tags="['Python', '数据分析', '机器学习']"
+      icon="📈"
+      repo="qqqqqqiu0804/stock_analysis"
     />
   </div>
   <div class="animate-fade-in delay-200">
@@ -28,6 +32,8 @@ description: 我的 vibecoding 小项目合集
       description="期末复习管理系统"
       link="/projects/study-manager"
       :tags="['React', 'TypeScript']"
+      icon="📚"
+      repo="qqqqqqiu0804/study-manager"
     />
   </div>
   <div class="animate-fade-in delay-300">
@@ -36,6 +42,8 @@ description: 我的 vibecoding 小项目合集
       description="Java 测验系统"
       link="/projects/java-quiz-system"
       :tags="['Java', 'HTML']"
+      icon="☕"
+      repo="qqqqqqiu0804/java-quiz-system"
     />
   </div>
   <div class="animate-fade-in delay-400">
@@ -44,6 +52,8 @@ description: 我的 vibecoding 小项目合集
       description="卡黄原设 ABO 系列"
       link="https://github.com/qqqqqqiu0804/kahuang"
       :tags="['文学', 'HTML']"
+      icon="🌸"
+      repo="qqqqqqiu0804/kahuang"
     />
   </div>
   <div class="animate-fade-in delay-500">
@@ -52,6 +62,8 @@ description: 我的 vibecoding 小项目合集
       description="vibecoding 小项目合集"
       link="https://github.com/qqqqqqiu0804/vibecoding"
       :tags="['HTML', 'CSS', 'JavaScript']"
+      icon="💻"
+      repo="qqqqqqiu0804/vibecoding"
     />
   </div>
 </div>

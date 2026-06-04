@@ -8,6 +8,17 @@ description: 基于 Python 的毕业设计项目
 # 光伏行业舆情与股价关联分析系统
 
 <div class="max-w-4xl mx-auto">
+  <!-- 项目截图轮播 -->
+  <div class="bg-white rounded-lg shadow-md p-4 mb-6">
+    <ScreenshotCarousel
+      :screenshots="[
+        { src: '/personal-website/images/projects/stock-analysis-1.png', alt: '系统主界面' },
+        { src: '/personal-website/images/projects/stock-analysis-2.png', alt: '数据分析结果' },
+        { src: '/personal-website/images/projects/stock-analysis-3.png', alt: '可视化报告' }
+      ]"
+    />
+  </div>
+
   <div class="bg-white rounded-lg shadow-md p-8 mb-6">
     <h2 class="text-2xl font-serif mb-4">项目简介</h2>
     <p class="text-gray-600 mb-4">
@@ -15,10 +26,10 @@ description: 基于 Python 的毕业设计项目
       通过爬取新闻数据、社交媒体数据，结合股价数据，进行情感分析和关联分析。
     </p>
     <div class="flex flex-wrap gap-2 mb-4">
-      <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded">Python</span>
-      <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">数据分析</span>
-      <span class="bg-green-100 text-green-800 px-3 py-1 rounded">机器学习</span>
-      <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded">NLP</span>
+      <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded font-medium">Python</span>
+      <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded font-medium">数据分析</span>
+      <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded font-medium">机器学习</span>
+      <span class="bg-teal-100 text-teal-700 px-3 py-1 rounded font-medium">NLP</span>
     </div>
     <a
       href="https://github.com/qqqqqqiu0804/stock_analysis"
