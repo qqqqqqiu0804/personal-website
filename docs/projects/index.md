@@ -26,7 +26,7 @@ description: 我的 vibecoding 小项目合集
     <ProjectCard
       title="study-manager"
       description="期末复习管理系统"
-      link="https://github.com/qqqqqqiu0804/study-manager"
+      link="/projects/study-manager"
       :tags="['React', 'TypeScript']"
     />
   </div>
@@ -34,7 +34,7 @@ description: 我的 vibecoding 小项目合集
     <ProjectCard
       title="java-quiz-system"
       description="Java 测验系统"
-      link="https://github.com/qqqqqqiu0804/java-quiz-system"
+      link="/projects/java-quiz-system"
       :tags="['Java', 'HTML']"
     />
   </div>

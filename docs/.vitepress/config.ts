@@ -36,6 +36,8 @@ export default defineConfig({
           items: [
             { text: '全部项目', link: '/projects/' },
             { text: '光伏行业分析系统', link: '/projects/stock-analysis' },
+            { text: '期末复习管理系统', link: '/projects/study-manager' },
+            { text: 'Java 测验系统', link: '/projects/java-quiz-system' },
           ]
         }
       ],
