@@ -1,6 +1,6 @@
 <!-- docs/.vitepress/theme/components/HobbyCard.vue -->
 <template>
-  <div class="hobby-card bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-all duration-300">
+  <div class="hobby-card bg-white rounded-lg shadow-md p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
     <div class="hobby-icon text-4xl mb-4">
       {{ icon }}
     </div>
@@ -46,7 +46,6 @@ defineProps({
 
 .hobby-card:hover {
   border-color: rgba(167, 139, 250, 0.3);
-  transform: translateY(-4px);
 }
 
 .hobby-icon {

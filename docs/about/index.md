@@ -120,7 +120,7 @@ description: 数据科学探索者 & vibecoding 爱好者
         :tags="['数据', '可视化']"
       />
       <HobbyCard
-        icon="🎮"
+        icon="🌐"
         title="开源项目"
         description="参与开源社区，贡献代码。"
         :tags="['GitHub', '开源']"
