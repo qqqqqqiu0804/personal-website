@@ -11,6 +11,7 @@ import Giscus from './components/Giscus.vue'
 import Umami from './components/Umami.vue'
 import LikeButton from './components/LikeButton.vue'
 import Timeline from './components/Timeline.vue'
+import Avatar from './components/Avatar.vue'
 
 // ScrollTrigger: IntersectionObserver for .scroll-trigger elements
 function initScrollTrigger() {
@@ -80,5 +81,6 @@ export default {
     app.component('Umami', Umami)
     app.component('LikeButton', LikeButton)
     app.component('Timeline', Timeline)
+    app.component('Avatar', Avatar)
   }
 }

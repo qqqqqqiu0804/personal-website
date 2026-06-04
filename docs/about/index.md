@@ -8,6 +8,13 @@ description: 数据科学探索者 & vibecoding 爱好者
 <div class="max-w-3xl mx-auto">
   <div class="bg-white rounded-lg shadow-md p-8 mb-6">
     <div class="flex items-start gap-6">
+      <!-- 头像 -->
+      <Avatar
+        src="/personal-website/images/avatar.png"
+        alt="HXT 的头像"
+        size="lg"
+        :show-status="true"
+      />
       <div class="flex-1">
         <h2 class="text-2xl font-serif mb-4">HXT</h2>
         <p class="text-gray-600 mb-4">
