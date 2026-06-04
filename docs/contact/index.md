@@ -19,6 +19,12 @@ description: 如何联系我
         <span class="text-gray-500">邮箱:</span>
         <span>837530223@qq.com</span>
       </div>
+      <div class="flex items-center gap-3">
+        <span class="text-gray-500">微博:</span>
+        <a href="https://www.weibo.com/u/6473460689" class="text-morandi-purple hover:underline">
+          weibo.com/u/6473460689
+        </a>
+      </div>
     </div>
   </div>
 </div>

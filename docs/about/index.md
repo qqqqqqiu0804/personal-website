@@ -141,6 +141,12 @@ description: 数据科学探索者 & vibecoding 爱好者
         <span class="text-gray-500 w-16">邮箱:</span>
         <span>837530223@qq.com</span>
       </div>
+      <div class="flex items-center gap-3">
+        <span class="text-gray-500 w-16">微博:</span>
+        <a href="https://www.weibo.com/u/6473460689" target="_blank" rel="noopener noreferrer" class="text-morandi-purple hover:underline">
+          weibo.com/u/6473460689
+        </a>
+      </div>
     </div>
   </div>
 </div>
