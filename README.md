@@ -20,6 +20,9 @@
 - [VitePress](https://vitepress.dev/) - 静态站点生成器
 - [Vue 3](https://vuejs.org/) - 前端框架
 - [Tailwind CSS](https://tailwindcss.com/) - CSS 框架
+- [GitHub Pages](https://pages.github.com/) - 网站托管
+- [GitHub Actions](https://github.com/features/actions) - 自动部署
+- [Giscus](https://giscus.app/) - 评论系统（基于 GitHub Discussions）
 - [Umami](https://umami.is/) - 网站访问统计
 
 ## 本地开发
