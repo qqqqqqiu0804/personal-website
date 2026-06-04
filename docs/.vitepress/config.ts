@@ -25,6 +25,7 @@ export default defineConfig({
       { text: '工具', link: '/tools/' },
       { text: '关于', link: '/about/' },
       { text: '联系', link: '/contact/' },
+      { text: '留言板', link: '/guestbook/' },
     ],
 
     // 侧边栏
