@@ -3,12 +3,16 @@
   <div class="avatar-container" :class="containerClass">
     <div class="avatar-wrapper" :class="wrapperClass">
       <img
+        v-show="!imageError"
         :src="src"
         :alt="alt"
         class="avatar-image"
         :class="imageClass"
         @error="handleError"
       />
+      <div v-if="imageError" class="avatar-fallback">
+        <span class="avatar-fallback-text">?</span>
+      </div>
       <div v-if="showBorder" class="avatar-border"></div>
     </div>
     <div v-if="showStatus" class="avatar-status">
@@ -51,7 +55,6 @@ const props = defineProps({
 const imageError = ref(false)
 
 const containerClass = computed(() => ({
-  'avatar-container': true,
   [`avatar-${props.size}`]: true
 }))
 
@@ -64,8 +67,7 @@ const wrapperClass = computed(() => ({
 const imageClass = computed(() => ({
   'avatar-image': true,
   'avatar-rounded': props.rounded,
-  'avatar-square': !props.rounded,
-  'avatar-error': imageError.value
+  'avatar-square': !props.rounded
 }))
 
 function handleError() {
@@ -149,15 +151,19 @@ function handleError() {
   border: 3px solid var(--vp-c-bg);
 }
 
-.avatar-error {
+.avatar-fallback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: var(--vp-c-bg-alt);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.avatar-error::after {
-  content: '?';
+.avatar-fallback-text {
   font-size: 2rem;
   color: var(--vp-c-text-mute);
 }
