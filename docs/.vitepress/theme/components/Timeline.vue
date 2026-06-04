@@ -34,7 +34,6 @@
 defineProps({
   items: {
     type: Array,
-    required: true,
     default: () => []
   }
 })
@@ -104,14 +103,14 @@ defineProps({
   top: 1.5rem;
   right: -8px;
   border: 8px solid transparent;
-  border-left-color: white;
+  border-left-color: var(--vp-c-bg-elv);
 }
 
 .timeline-item-right .timeline-content::before {
   left: -8px;
   right: auto;
   border-left-color: transparent;
-  border-right-color: white;
+  border-right-color: var(--vp-c-bg-elv);
 }
 
 @media (max-width: 768px) {
@@ -138,7 +137,7 @@ defineProps({
     left: -8px;
     right: auto;
     border-left-color: transparent;
-    border-right-color: white;
+    border-right-color: var(--vp-c-bg-elv);
   }
 }
 </style>

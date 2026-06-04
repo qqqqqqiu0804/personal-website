@@ -21,14 +21,14 @@ description: 欢迎留言交流！
   <!-- Giscus 评论区作为留言板 -->
   <Giscus
     repo="qqqqqqiu0804/personal-website"
-    repoId="R_kgDONqMk5A"
+    repoId="R_kgDOSvBOJA"
     category="Announcements"
-    categoryId="DIC_kwDONqMk5M4CjJqW"
+    categoryId="DIC_kwDOSvBOJM4C-eF0"
     mapping="pathname"
     strict="0"
     reactionsEnabled="1"
-    emitMetadata="0"
-    inputPosition="bottom"
+    emitMetadata="1"
+    inputPosition="top"
     theme="preferred_color_scheme"
     lang="zh-CN"
     loading="lazy"

@@ -40,11 +40,11 @@ const props = defineProps({
   },
   emitMetadata: {
     type: String,
-    default: '0'
+    default: '1'
   },
   inputPosition: {
     type: String,
-    default: 'bottom'
+    default: 'top'
   },
   theme: {
     type: String,

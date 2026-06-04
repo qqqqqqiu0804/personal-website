@@ -11,8 +11,8 @@ export default defineConfig({
     ['meta', { name: 'author', content: 'HXT' }],
     ['meta', { name: 'keywords', content: '数据科学, Python, 个人网站, 博客' }],
     ['link', { rel: 'icon', href: '/personal-website/favicon.ico' }],
-    // Umami 统计脚本（需要替换为真实的 website ID，获取方式：Umami 后台 > Settings > Websites）
-    ['script', { defer: true, 'data-website-id': 'YOUR_WEBSITE_ID', src: 'https://analytics.umami.is/script.js' }],
+    // Umami 统计脚本
+    ['script', { defer: true, 'data-website-id': 'bd1077cf-e94c-4107-bd44-03aac024849c', src: 'https://cloud.umami.is/script.js' }],
   ],
 
   // 主题配置
