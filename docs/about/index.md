@@ -94,13 +94,38 @@ description: 数据科学探索者 & vibecoding 爱好者
 
   <div class="bg-white rounded-lg shadow-md p-8 mb-6">
     <h2 class="text-2xl font-serif mb-4">兴趣爱好</h2>
-    <ul class="list-disc list-inside text-gray-600 space-y-2">
-      <li>黄婷婷单推 🌸</li>
-      <li>百合 ABO 小说阅读</li>
-      <li>vibecoding</li>
-      <li>数据分析项目</li>
-      <li>开源项目贡献</li>
-    </ul>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <HobbyCard
+        icon="🌸"
+        title="黄婷婷单推"
+        description="SNH48 Team NII 成员，最喜欢的偶像。"
+        :tags="['偶像', 'SNH48']"
+      />
+      <HobbyCard
+        icon="📚"
+        title="百合 ABO 小说"
+        description="喜欢阅读百合文学中的 ABO 设定体系。"
+        :tags="['小说', '文学']"
+      />
+      <HobbyCard
+        icon="💻"
+        title="vibecoding"
+        description="享受用代码创造有趣东西的乐趣。"
+        :tags="['编程', '开源']"
+      />
+      <HobbyCard
+        icon="📊"
+        title="数据分析"
+        description="探索数据背后的故事和规律。"
+        :tags="['数据', '可视化']"
+      />
+      <HobbyCard
+        icon="🎮"
+        title="开源项目"
+        description="参与开源社区，贡献代码。"
+        :tags="['GitHub', '开源']"
+      />
+    </div>
   </div>
 
   <div class="bg-white rounded-lg shadow-md p-8">
