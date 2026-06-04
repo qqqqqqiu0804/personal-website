@@ -5,7 +5,7 @@ description: 基于 Java 的在线测验平台
 
 # Java 测验系统
 
-[返回项目列表](/projects/)
+[← 返回项目列表](/projects/)
 
 <div class="max-w-4xl mx-auto">
   <div class="bg-white rounded-lg shadow-md p-8 mb-6">
