@@ -38,6 +38,9 @@ export default defineConfig({
             { text: '光伏行业分析系统', link: '/projects/stock-analysis' },
             { text: '期末复习管理系统', link: '/projects/study-manager' },
             { text: 'Java 测验系统', link: '/projects/java-quiz-system' },
+            { text: 'htmlppt', link: 'https://github.com/qqqqqqiu0804/htmlppt' },
+            { text: 'kahuang', link: 'https://github.com/qqqqqqiu0804/kahuang' },
+            { text: 'vibecoding', link: 'https://github.com/qqqqqqiu0804/vibecoding' },
           ]
         }
       ],
