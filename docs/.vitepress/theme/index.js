@@ -10,6 +10,7 @@ import TagCloud from './components/TagCloud.vue'
 import Giscus from './components/Giscus.vue'
 import Umami from './components/Umami.vue'
 import LikeButton from './components/LikeButton.vue'
+import Timeline from './components/Timeline.vue'
 
 // ScrollTrigger: IntersectionObserver for .scroll-trigger elements
 function initScrollTrigger() {
@@ -78,5 +79,6 @@ export default {
     app.component('Giscus', Giscus)
     app.component('Umami', Umami)
     app.component('LikeButton', LikeButton)
+    app.component('Timeline', Timeline)
   }
 }

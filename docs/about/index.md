@@ -58,6 +58,33 @@ description: 数据科学探索者 & vibecoding 爱好者
     </div>
   </div>
 
+  <!-- 个人时间线 -->
+  <div class="bg-white rounded-lg shadow-md p-8 mb-6">
+    <h2 class="text-2xl font-serif mb-4">成长经历</h2>
+    <Timeline
+      :items="[
+        {
+          date: '2024',
+          title: '开始学习数据科学',
+          description: '接触 Python 和数据分析，开始探索数据科学的世界。',
+          tags: ['Python', '数据分析']
+        },
+        {
+          date: '2025',
+          title: '第一个 vibecoding 项目',
+          description: '完成了第一个 vibecoding 项目，体验到用代码创造的乐趣。',
+          tags: ['HTML', 'CSS', 'JavaScript']
+        },
+        {
+          date: '2026',
+          title: '搭建个人网站',
+          description: '使用 VitePress 搭建个人网站，展示项目和分享学习心得。',
+          tags: ['VitePress', 'Vue', 'Tailwind CSS']
+        }
+      ]"
+    />
+  </div>
+
   <div class="bg-white rounded-lg shadow-md p-8 mb-6">
     <h2 class="text-2xl font-serif mb-4">兴趣爱好</h2>
     <ul class="list-disc list-inside text-gray-600 space-y-2">
