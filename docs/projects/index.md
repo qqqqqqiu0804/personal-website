@@ -10,7 +10,7 @@ description: 我的 vibecoding 小项目合集
     <ProjectCard
       title="htmlppt"
       description="存储芯片涨价逻辑 PPT"
-      link="https://github.com/qqqqqqiu0804/htmlppt"
+      link="/projects/htmlppt"
       :tags="['HTML', 'CSS']"
       icon="📊"
       repo="qqqqqqiu0804/htmlppt"
@@ -50,7 +50,7 @@ description: 我的 vibecoding 小项目合集
     <ProjectCard
       title="kahuang"
       description="卡黄原设 ABO 系列"
-      link="https://github.com/qqqqqqiu0804/kahuang"
+      link="/projects/kahuang"
       :tags="['文学', 'HTML']"
       icon="🌸"
       repo="qqqqqqiu0804/kahuang"
@@ -60,7 +60,7 @@ description: 我的 vibecoding 小项目合集
     <ProjectCard
       title="vibecoding"
       description="vibecoding 小项目合集"
-      link="https://github.com/qqqqqqiu0804/vibecoding"
+      link="/projects/vibecoding"
       :tags="['HTML', 'CSS', 'JavaScript']"
       icon="💻"
       repo="qqqqqqiu0804/vibecoding"
