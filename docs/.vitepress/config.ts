@@ -50,6 +50,7 @@ export default defineConfig({
           items: [
             { text: '全部文章', link: '/blog/' },
             { text: 'Python 技巧', link: '/blog/python-tips' },
+            { text: 'cc-connect + mimo + 微信', link: '/blog/cc-connect-mimo-wechat' },
           ]
         }
       ],
